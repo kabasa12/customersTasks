@@ -1,0 +1,13 @@
+<h2>Customers</h2>
+<div class="row header">
+    <div class="col-md-1">Name</div>
+    <div class="col-md-3">Occupation</div>
+    <div class="col-md-2">Phone</div>
+    <div class="col-md-3">Email</div>
+</div>
+<div *ngFor="let customer of customers" class="row">
+    <div class="col-md-1">{{customer.name}}</div>
+    <div class="col-md-3">{{customer.occupation}}</div>
+    <div class="col-md-2">{{customer.phone}}</div>
+    <div class="col-md-3">{{customer.email}}</div>
+</div>

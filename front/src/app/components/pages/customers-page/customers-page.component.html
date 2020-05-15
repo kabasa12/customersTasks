@@ -1,0 +1,15 @@
+<h2>Customers</h2>
+<div class="row header">
+    <div class="col-md-1">#</div>
+    <div class="col-md-3">Task</div>
+    <div class="col-md-2">Customer</div>
+    <div class="col-md-3">Date</div>
+    <div class="col-md-1">Done</div>
+</div>
+<div *ngFor="let task of tasks" class="row">
+    <div class="col-md-1">{{task.id}}</div>
+    <div class="col-md-3">{{task.description}}</div>
+    <div class="col-md-2">{{task.name}}</div>
+    <div class="col-md-3">{{task.creation_date}}</div>
+    <div class="col-md-1">{{task.finished}}</div>
+</div>
